@@ -115,6 +115,8 @@
 		9CE358ED143340D4B6745B5A /* MyPluginLayerDebugView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED5B8D0B3AF437E91C5FB39 /* MyPluginLayerDebugView.m */; };
 		C8AADA1F93314C3B9B476288 /* MyPluginScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20797F7DC8BB4469BC631F8B /* MyPluginScrollView.m */; };
 		2EB8F13759CD4A3A8FF9B59C /* LaunchNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 792CF45BADDB491AB518A087 /* LaunchNavigator.m */; };
+		678491BEF0E74C31A781C00B /* CDVConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = DC511666F8524B348D643530 /* CDVConnection.m */; };
+		868BE5BDF75D4635A01F57BD /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 873A8D2322F64D6E97DA1C6D /* CDVReachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -284,6 +286,10 @@
 		DC4AEDCDC2EE41BDA5018556 /* MyPluginScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MyPluginScrollView.h"; path = "plugin.google.maps/MyPluginScrollView.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		792CF45BADDB491AB518A087 /* LaunchNavigator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "LaunchNavigator.m"; path = "uk.co.workingedge.phonegap.plugin.LaunchNavigator/LaunchNavigator.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		942E6A006D5F4DB190BB633D /* LaunchNavigator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LaunchNavigator.h"; path = "uk.co.workingedge.phonegap.plugin.LaunchNavigator/LaunchNavigator.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		DC511666F8524B348D643530 /* CDVConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVConnection.m"; path = "org.apache.cordova.network-information/CDVConnection.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		873A8D2322F64D6E97DA1C6D /* CDVReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVReachability.m"; path = "org.apache.cordova.network-information/CDVReachability.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		D0616347DC0D44029A12119B /* CDVConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVConnection.h"; path = "org.apache.cordova.network-information/CDVConnection.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		D02CF855D67A4AB38FFF55AE /* CDVReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVReachability.h"; path = "org.apache.cordova.network-information/CDVReachability.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -529,6 +535,10 @@
 				DC4AEDCDC2EE41BDA5018556 /* MyPluginScrollView.h */,
 				792CF45BADDB491AB518A087 /* LaunchNavigator.m */,
 				942E6A006D5F4DB190BB633D /* LaunchNavigator.h */,
+				DC511666F8524B348D643530 /* CDVConnection.m */,
+				873A8D2322F64D6E97DA1C6D /* CDVReachability.m */,
+				D0616347DC0D44029A12119B /* CDVConnection.h */,
+				D02CF855D67A4AB38FFF55AE /* CDVReachability.h */,
 			);
 			name = Plugins;
 			path = "CeAPOC/Plugins";
@@ -746,6 +756,8 @@
 				9CE358ED143340D4B6745B5A /* MyPluginLayerDebugView.m in Sources */,
 				C8AADA1F93314C3B9B476288 /* MyPluginScrollView.m in Sources */,
 				2EB8F13759CD4A3A8FF9B59C /* LaunchNavigator.m in Sources */,
+				678491BEF0E74C31A781C00B /* CDVConnection.m in Sources */,
+				868BE5BDF75D4635A01F57BD /* CDVReachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -66,4 +66,7 @@
     <access origin="*" />
     <access launch-external="yes" origin="maps:*" />
     <access launch-external="yes" origin="geo:*" />
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>
 </widget>

@@ -38,3 +38,9 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 2015-05-26 13:20:35.646 CeAPOC[35229:2678591] [CDVTimer][TotalPluginStartup] 14.292002ms
 2015-05-26 13:20:35.695 CeAPOC[35229:2678591] Resetting plugins due to page load.
 2015-05-26 13:20:35.863 CeAPOC[35229:2678591] Finished load of: file:///Users/i810937/Library/Developer/CoreSimulator/Devices/57BAF446-8A40-47FE-807F-14E6B8A8631F/data/Containers/Bundle/Application/D221D02C-B312-47C5-9626-E8F06BEAFEE3/CeAPOC.app/www/index.html
+2015-05-26 13:28:34.400 CeAPOC[35229:2678591] Resetting plugins due to page load.
+2015-05-26 13:28:34.695 CeAPOC[35229:2678591] Finished load of: file:///Users/i810937/Library/Developer/CoreSimulator/Devices/57BAF446-8A40-47FE-807F-14E6B8A8631F/data/Containers/Bundle/Application/D221D02C-B312-47C5-9626-E8F06BEAFEE3/CeAPOC.app/www/menu.html
+2015-05-26 13:28:37.542 CeAPOC[35229:2678591] Resetting plugins due to page load.
+2015-05-26 13:28:37.585 CeAPOC[35229:2678591] Finished load of: file:///Users/i810937/Library/Developer/CoreSimulator/Devices/57BAF446-8A40-47FE-807F-14E6B8A8631F/data/Containers/Bundle/Application/D221D02C-B312-47C5-9626-E8F06BEAFEE3/CeAPOC.app/www/mapa.html
+2015-05-26 13:28:37.655 CeAPOC[35229:2678591] This app uses phonegap-googlemaps-plugin version 1.2.5
+2015-05-26 13:28:38.786 CeAPOC[35229:2678591] Google Maps SDK for iOS version: 1.9.14591.0

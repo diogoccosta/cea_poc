@@ -83,6 +83,10 @@
                         {
                             "xml": "false",
                             "count": 2
+                        },
+                        {
+                            "xml": "true",
+                            "count": 1
                         }
                     ],
                     "CoreData.framework": [
@@ -165,6 +169,10 @@
                         {
                             "xml": "<feature name=\"LaunchNavigator\"><param name=\"ios-package\" value=\"LaunchNavigator\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
+                            "count": 1
                         }
                     ],
                     "/widget": [
@@ -240,6 +248,9 @@
             "PACKAGE_NAME": "com.coolappz.cordova"
         },
         "uk.co.workingedge.phonegap.plugin.LaunchNavigator": {
+            "PACKAGE_NAME": "com.coolappz.cordova"
+        },
+        "org.apache.cordova.network-information": {
             "PACKAGE_NAME": "com.coolappz.cordova"
         }
     },

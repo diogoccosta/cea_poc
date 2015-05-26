@@ -43,6 +43,10 @@
                         {
                             "xml": "<feature name=\"LaunchNavigator\"><param name=\"android-package\" value=\"uk.co.workingedge.phonegap.plugin.LaunchNavigator\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
                         }
                     ],
                     "/widget": [
@@ -140,6 +144,12 @@
                         },
                         {
                             "xml": "<uses-feature android:glEsVersion=\"0x00020000\" android:required=\"true\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
                             "count": 1
                         }
                     ]
@@ -644,6 +654,9 @@
             "PACKAGE_NAME": "com.coolappz.cordova"
         },
         "uk.co.workingedge.phonegap.plugin.LaunchNavigator": {
+            "PACKAGE_NAME": "com.coolappz.cordova"
+        },
+        "org.apache.cordova.network-information": {
             "PACKAGE_NAME": "com.coolappz.cordova"
         }
     },
