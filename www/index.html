@@ -23,7 +23,7 @@
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         <script type="text/javascript" src="js/novo_cadastro.js"></script>
         <script type="text/javascript">
-                document.addEventListener("deviceready", SMPIntegration.init, false);
+//                document.addEventListener("deviceready", SMPIntegration.init, false);
     //document.addEventListener("online", SMPIntegration.deviceOnline, false);
     //document.addEventListener("offline", SMPIntegration.deviceOffline, false);
     document.addEventListener("pause", SMPIntegration.onPause, false);
@@ -91,8 +91,8 @@
     });
     
     $('#botao-submmit').click(function() {
-        onclick="SMPIntegration.login();"
-        //window.document.location = "menu.html";
+        //onclick="SMPIntegration.login();"
+        window.document.location = "menu.html";
     });
     
     $('#novo-cadastro').click(function() {
