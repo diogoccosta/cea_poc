@@ -19,6 +19,8 @@
             src="jquery/jquery-mobile/jquery.mobile.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script src="//www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+        <script src="js/datajs-1.1.2.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         <script type="text/javascript" src="js/novo_cadastro.js"></script>
         <script type="text/javascript">
                 document.addEventListener("deviceready", SMPIntegration.init, false);
@@ -89,8 +91,8 @@
     });
     
     $('#botao-submmit').click(function() {
-        //onclick="SMPIntegration.login();"
-        window.document.location = "menu.html";
+        onclick="SMPIntegration.login();"
+        //window.document.location = "menu.html";
     });
     
     $('#novo-cadastro').click(function() {

@@ -48,11 +48,17 @@ function sendEmail() {
             console.log('Service is not available');
         }
     );
+
+    var fileURL = window.logOb.toURL();
+    // iOS needs a relative path
+    //if ( window.device.platform === 'iOS' ) {        
+        //fileURL = fileURL.replace("file://", "");
+    //}
     cordova.plugins.email.open({
         to: 'luiz.duraes@cea.com.br',
         cc: 'jonatas.correa@cea.com.br',
         subject: 'Arquivo de LOG SAP SMP',
-        attachments: [window.logOb.toURI()],
+        attachments: [fileURL],
         body: 'Log em Anexo'    
     });
 }

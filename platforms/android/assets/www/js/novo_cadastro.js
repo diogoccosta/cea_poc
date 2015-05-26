@@ -3,7 +3,7 @@ var SMPIntegration = (function() {
         appId: "com.coolappz.cordova",
         applicationContext: null,
         smpServerProtocol: "http",
-        smpServerHost: "smpserver",
+        smpServerHost: "172.25.215.199",
         //smpServerHost: "172.16.238.147",
         smpServerPort: "8080",
 //        integrationGatewayUrl: "http://172.16.238.148:8080/gateway/odata/SAP/POC;v=1",

@@ -410,6 +410,7 @@
 /Users/i810937/Kapsel_Projects/cordova_novo/CeA_POC/platforms/android/assets/www/jquery/jquery-mobile/images/icons-18-white.png \
 /Users/i810937/Kapsel_Projects/cordova_novo/CeA_POC/platforms/android/assets/www/jquery/jquery-mobile/images/icons-36-black.png \
 /Users/i810937/Kapsel_Projects/cordova_novo/CeA_POC/platforms/android/assets/www/jquery/jquery-mobile/images/icons-36-white.png \
+/Users/i810937/Kapsel_Projects/cordova_novo/CeA_POC/platforms/android/assets/www/js/datajs-1.1.2.js \
 /Users/i810937/Kapsel_Projects/cordova_novo/CeA_POC/platforms/android/assets/www/js/email.js \
 /Users/i810937/Kapsel_Projects/cordova_novo/CeA_POC/platforms/android/assets/www/js/index.js \
 /Users/i810937/Kapsel_Projects/cordova_novo/CeA_POC/platforms/android/assets/www/js/mapa.js \

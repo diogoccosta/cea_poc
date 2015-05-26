@@ -3,7 +3,7 @@ var SMPIntegration = (function() {
         appId: "com.coolappz.cordova",
         applicationContext: null,
         smpServerProtocol: "http",
-        smpServerHost: "smpserver",
+        smpServerHost: "172.25.215.199",
         //smpServerHost: "172.16.238.147",
         smpServerPort: "8080",
 //        integrationGatewayUrl: "http://172.16.238.148:8080/gateway/odata/SAP/POC;v=1",
@@ -122,6 +122,11 @@ var SMPIntegration = (function() {
         alert("An error occurred: " + JSON.stringify(e));
     };
 
+    var loginErrorCallback= function(e) {
+        console.log("erro login");
+        window.document.location = "menu.html";
+    };
+
     var openStore = function() {
         config.startTime = new Date();
         updateStatus2("store.open called");
@@ -219,11 +224,11 @@ var SMPIntegration = (function() {
 
     var createSuccess = function() {
       console.log("flushing");
-       // store.flush(function(args){
-       //   console.log("flushed");
-       //   console.log(args);
-       //   read();
-       // },errorCallback);
+       store.flush(function(args){
+         console.log("flushed");
+         console.log(args);
+         read();
+       },errorCallback);
         read();
 
     };
@@ -309,7 +314,7 @@ var SMPIntegration = (function() {
                 requestUri: config.applicationContext.applicationEndpointURL + url,
                 method: "GET"
             };
-            OData.request(request,loginSuccess,errorCallback);
+            OData.request(request,loginSuccess,loginErrorCallback);
         }
     };
 })();

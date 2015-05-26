@@ -9,6 +9,8 @@
               href="css/novo_cadastro.css">
         <script type="text/javascript" 
             src="jquery/jquery/jquery.js"></script>
+        <script src="js/datajs-1.1.2.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         <script type="text/javascript" src="js/novo_cadastro.js"></script>
         <script type="text/javascript">
 document.addEventListener("deviceready", SMPIntegration.init, false);
@@ -36,7 +38,7 @@ document.addEventListener("resume", SMPIntegration.onResume, false);
             <img src="img/Screen_3/text_fields.png" 
                  class="div-cadastro" alt=""/>
             <img src="img/Screen_3/cada_button-.png"
-                 class="div-icon-button" alt=""/>
+                 class="div-icon-button" alt="" onclick="SMPIntegration.handleSaveButton()"/>
             <form action="">
             <div class="input-user">
                 <input id="user" type="text" name="user" class="input-user" 
