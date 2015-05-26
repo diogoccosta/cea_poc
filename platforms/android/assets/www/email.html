@@ -4,37 +4,188 @@
     <title>Conexao</title>
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="email.js"></script>
     <script type="text/javascript" charset="utf-8">
 
-    // Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
+var logOb;
 
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        checkConnection();
+function fail(e) {
+    console.log("FileSystem Error");
+    console.dir(e);
+};
+
+function wifiFail() {
+    console.log("no wifi");
+}
+
+function wifiSuccess(wifiData) {
+    console.log(wifiData);
+    writeLog("Connected to WIFI: " + wifiData.SSID);
+    // {
+    // BSSID: "0:1a:3f:88:88:88"
+    // IPAddress: "192.168.1.142"
+    // MacAddress: "" // On iOS7+ this will always be blank
+    // SSID: "MY_WIRELESS_SSID"
+    //}
+}
+
+function deviceOnline() {
+    console.log("online");
+    writeLog("Device online");
+    navigator.wifi.getConnectedWifiInfo(wifiSuccess, wifiFail);
+}
+
+function deviceOffline() {
+    console.log("offline");
+    writeLog("Device OFFLINE!!!");
+
+}
+
+function sendEmail() {
+    console.log(window.logOb);
+    cordova.plugins.email.isAvailable(
+        function(isAvailable) {
+            console.log('Service is not available');
+        }
+    );
+    cordova.plugins.email.open({
+        to: 'luiz.duraes@cea.com.br',
+        cc: 'jonatas.correa@cea.com.br',
+        subject: 'Arquivo de LOG SAP SMP',
+        attachments: [window.logOb.toURI()],
+        body: 'Log em Anexo'    
+    });
+}
+
+function writeLog(str) {
+    if (!window.logOb) return;
+    var log = str + " [" + (new Date()) + "]\n";
+    console.log("going to log " + log);
+    window.logOb.createWriter(function(fileWriter) {
+
+        fileWriter.seek(fileWriter.length);
+
+        var blob = new Blob([log], {
+            type: 'text/plain'
+        });
+        fileWriter.write(blob);
+        console.log("ok, in theory i worked");
+    }, fail);
+}
+
+// Wait for device API libraries to load
+//
+document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("online", deviceOnline, false);
+document.addEventListener("offline", deviceOffline, false);
+
+// device APIs are available
+//
+function onDeviceReady() {
+    checkConnection();
+      window.requestFileSystem(LocalFileSystem.PERSISTENT, 0 /*unknown size*/, onInitFs, errorHandler);
+
+        // window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function(dir) {
+        //     console.log("got main dir", dir);
+        //     dir.getFile("connection.log", {
+        //         create: true
+        //     }, function(file) {
+        //         console.log("got the file", file);
+        //         window.logOb = file;
+        //        writeLog("App started");
+        //     });
+        // });
+
+}
+
+function checkConnection() {
+    var networkState = navigator.connection.type;
+
+    var states = {};
+    states[Connection.UNKNOWN] = 'Unknown connection';
+    states[Connection.ETHERNET] = 'Ethernet connection';
+    states[Connection.WIFI] = 'WiFi connection';
+    states[Connection.CELL_2G] = 'Cell 2G connection';
+    states[Connection.CELL_3G] = 'Cell 3G connection';
+    states[Connection.CELL_4G] = 'Cell 4G connection';
+    states[Connection.CELL] = 'Cell generic connection';
+    states[Connection.NONE] = 'No network connection';
+
+    console.log('Connection type: ' + states[networkState]);
+}
+
+    function onInitFs(fs) {
+      // Create a directory for this app at the filesystem root
+      fs.root.getDirectory("cea_poc", {create: true}, onDirSuccess, onDirFail);
     }
 
-    function checkConnection() {
-        var networkState = navigator.connection.type;
+    function onDirSuccess(dirEntry) {
+        // Create a file to save our contacts to
+          dirEntry.getFile("connection.log", {create: true, exclusive: false}, onFileSuccess, errorHandler);
+    };
 
-        var states = {};
-        states[Connection.UNKNOWN]  = 'Unknown connection';
-        states[Connection.ETHERNET] = 'Ethernet connection';
-        states[Connection.WIFI]     = 'WiFi connection';
-        states[Connection.CELL_2G]  = 'Cell 2G connection';
-        states[Connection.CELL_3G]  = 'Cell 3G connection';
-        states[Connection.CELL_4G]  = 'Cell 4G connection';
-        states[Connection.CELL]     = 'Cell generic connection';
-        states[Connection.NONE]     = 'No network connection';
+    function onFileSuccess(fileEntry) {
+        logOb = fileEntry;
+        // Create a FileWriter object for our FileEntry.
+        //fileEntry.createWriter(function(fileWriter) {
 
-        alert('Connection type: ' + states[networkState]);
-    }
+            // fileWriter.onwriteend = function(e) {
+            //     var pathToFile = fileEntry.toURL();
+
+            //     // iOS needs a relative path
+            //     if ( window.device.platform === 'iOS' ) {        
+            //         pathToFile = pathToFile.replace("file://", "");
+            //     }
+
+            //     // Attach the file URL to an email
+            //     window.plugin.email.open({
+            //         subject: 'Contacts',
+            //         body:    'Body goes here.',
+            //         attachments: [pathToFile]
+            //     });
+         //   };
+
+            // fileWriter.onerror = function(e) {
+            //     console.log('Write failed: ' + e.toString());
+            //     //alert('Write failed: ' + e.toString());
+            //     alert('Unable to create export file.');
+            // };
+
+            // // Create the guts of the csv file
+            // var contactsCSV = buildContactsCSV();
+
+            // // Create a new Blob and write it out.
+            // var blob = new Blob([contactsCSV], {type: 'text/plain'});
+            // fileWriter.write(blob);
+
+//        }, errorHandler);
+    };
+
+    function onDirFail(error) {
+        //Error while creating directory
+        //alert("Unable to create new directory: " + error.code);
+        console.log('Unable to create export file.');
+    };
+
+    function errorHandler(e) {
+          console.log('Error: ' + e.toString);
+          //alert('Error: ' + e.toString);
+          console.log('Unable to create export file.');
+    };  
+
+    function emailCB(result) {
+          console.log('email composer returned: ' + result);
+    };
+
+    function buildContactsCSV() {
+        var str = '' //return string            
+        return str;
+    };
 
     </script>
   </head>
   <body>
     <p>Mostrando sua conexão.</p>
+    <button onclick="sendEmail()">Enviar LOG via E-mail</button>
   </body>
 </html>
