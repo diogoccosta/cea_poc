@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>C&amp;A</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" 
+              href="css/menu.css">
+        <link type="text/css" rel="stylesheet" 
+              href="jquery/jquery-mobile/jquery.mobile.css">
+        <script type="text/javascript" 
+            src="jquery/jquery/jquery.js"></script>
+        <script type="text/javascript" 
+            src="jquery/jquery-mobile/jquery.mobile.js"></script>
+        
+    </head>
+    <body>
+            <img src="img/Screen_3/screen_3_background.png" 
+                 class="div-body-menu div-opac-menu" alt="" />
+            <img src="img/Header/header.png"
+                 class="div-header-menu" alt="" />
+            <a href="#mypanel" class="ui-btn-inline">
+                <img src="img/Header/optionns_button-.png" 
+                 class="menu" alt="" />
+            </a>
+            
+            <p class="text-header-menu">CASA</p>
+            <img src="img/Header/logo-.png" 
+                 class="logo-menu" alt="" />
+            <div data-role="panel" id="mypanel" data-position="left" data-display="overlay">
+                <img src="img/Screen_4/options-Copia.png" 
+                 class="img-menu" alt="" />
+                <div id="botao-camera" class="botao-link botao-camera"></div>
+                <div id="botao-email" class="botao-link botao-email"></div>
+                <div id="botao-mapa" class="botao-link botao-mapa"></div>
+                <div id="botao-bluetooth" class="botao-link botao-bluetooth"></div>
+                <!--<a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>-->
+            </div>
+            <div data-role="panel" id="myPanelDefault"> 
+              <h2>Panel Header</h2>
+              <p>You can close the panel by clicking outside the panel, pressing the Esc key, by swiping, or by clicking the button below:</p>
+              <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+            </div> 
+            
+            <div id="fb-root"></div>
+            <script>
+                window.fbAsyncInit = function() {
+                    FB.init({
+                        appId      : '749817171782425',
+                        xfbml      : true,
+                        version    : 'v2.3'
+                    });
+                };
+
+                (function(d, s, id){
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) {return;}
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+            <div class="fb-page div-pagina-menu" data-href="https://www.facebook.com/ceaBrasil?fref=ts" 
+                 data-hide-cover="false" data-show-facepile="true"
+                 data-show-posts="false">
+                <div class="fb-xfbml-parse-ignore">
+                    <blockquote cite="https://www.facebook.com/ceaBrasil?fref=ts">
+                        <a href="https://www.facebook.com/ceaBrasil?fref=ts">C&amp;A</a>
+                    </blockquote>
+                </div>
+            </div>  
+    </body>
+</html>
+<script type="text/javascript">
+    $('#botao-camera').click(function() {
+        window.document.location = "camera.html";
+    });
+    $('#botao-email').click(function() {
+        window.document.location = "email.html";
+    });
+    $('#botao-mapa').click(function() {
+        window.document.location = "mapa.html";
+    });
+    $('#botao-bluetooth').click(function() {
+        window.document.location = "bluetooth.html";
+    });
+</script>

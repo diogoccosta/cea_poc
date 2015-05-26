@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>C&amp;A</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/splash.css">
+        <link type="text/css" rel="stylesheet" href="jquery/jquery-mobile/jquery.mobile.css">
+        <link type="text/css" rel="stylesheet" href="jquery/jquery-mobile/jquery.mobile.structure.css">
+        <link type="text/css" rel="stylesheet" href="jquery/jquery-mobile/jquery.mobile.theme.css">
+        <script type="text/javascript" src="jquery/jquery/jquery.js"></script>
+        <script type="text/javascript" src="jquery/jquery-mobile/jquery.mobile.js"></script>
+        <script type="text/javascript" src="js/splash.js"></script>
+    </head>
+    <body>
+        <div>
+<!--            <img src="img/Screen_1/background.png" alt="" class="img-back"/>
+            <img src="img/Screen_1/name_logo.png" alt="ELA" class="img-logo"/>
+            <img src="img/Screen_1/load_icon.png" alt="C&amp;A" class="img-load"/>-->
+            <script type="text/javascript">
+                function checkConnection() {
+                    var networkState = navigator.connection.type;
+
+                    var states = {};
+                    states[Connection.UNKNOWN]  = 'Unknown connection';
+                    states[Connection.ETHERNET] = 'Ethernet connection';
+                    states[Connection.WIFI]     = 'WiFi connection';
+                    states[Connection.CELL_2G]  = 'Cell 2G connection';
+                    states[Connection.CELL_3G]  = 'Cell 3G connection';
+                    states[Connection.CELL_4G]  = 'Cell 4G connection';
+                    states[Connection.CELL]     = 'Cell generic connection';
+                    states[Connection.NONE]     = 'No network connection';
+
+                    alert('Connection type: ' + states[networkState]);
+                }
+                alert(navigator.connection.type);
+
+                checkConnection();
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>C&amp;A</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" 
+              href="css/index.css">
+        <link type="text/css" rel="stylesheet" 
+              href="jquery/jquery-mobile/jquery.mobile.css">
+        <link type="text/css" rel="stylesheet" 
+              href="jquery/jquery-mobile/jquery.mobile.structure.css">
+        <link type="text/css" rel="stylesheet" 
+              href="jquery/jquery-mobile/jquery.mobile.theme.css">
+        <script type="text/javascript" 
+            src="jquery/jquery/jquery.js"></script>
+        <script type="text/javascript" 
+            src="jquery/jquery-mobile/jquery.mobile.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="//www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/novo_cadastro.js"></script>
+        <script type="text/javascript">
+                document.addEventListener("deviceready", SMPIntegration.init, false);
+    //document.addEventListener("online", SMPIntegration.deviceOnline, false);
+    //document.addEventListener("offline", SMPIntegration.deviceOffline, false);
+    document.addEventListener("pause", SMPIntegration.onPause, false);
+    document.addEventListener("resume", SMPIntegration.onResume, false);
+</script>
+
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId      : '749817171782425',
+                    xfbml      : true,
+                    version    : 'v2.3'
+                });
+            };
+
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+       
+        <div>
+            <img src="img/Screen_2/background.png" 
+                 class="div-body div-opac" alt="" />
+            <img src="img/Screen_2/pattern_for_background.png" 
+                 class="div-body" alt="" />
+            <img src="img/Screen_2/Logo_with_text&names.png"
+                 class="div-center" alt="" />
+            <img src="img/Screen_2/text_fields.png"
+                 class="div-login" alt="" />
+                <img src="img/Screen_2/icon_button.png" id="botao-submmit"
+                            class="div-icon-button" alt="" />
+                <img src="img/Screen_2/facebook_icon-.png" id="botao-face"
+                     class="div-facebook" alt="" style="cursor: pointer" />
+            
+            <p class="text-facebook">Entrar com Facebook</p>     
+            <div id="novo-cadastro">
+                <img src="img/Screen_2/new_user_icon.png" 
+                    class="div-new-user" alt=""/>
+                <p class="text-new-user">Novo Usuário</p>
+            </div>
+            <div class="input-user">
+                <input id="user_field" type="text" name="user" class="input-user" 
+                       placeholder="Usuário" maxlength="50"/>
+            </div>
+            <div class="input-pass">
+                <input id="password_field" type="text" name="pass" class="input-pass" 
+                       placeholder="Senha" maxlength="50"/>
+            </div>
+        </div>
+        <div class="fb-login-button" data-max-rows="1" data-size="medium" 
+             data-show-faces="false" data-auto-logout-link="false" 
+              id="fb-login-button"></div>
+    </body>
+</html>
+<script type="text/javascript">
+    $('#botao-face').click(function() {
+        $('#facebook').click();
+    });
+    
+    $('#botao-submmit').click(function() {
+        //onclick="SMPIntegration.login();"
+        window.document.location = "menu.html";
+    });
+    
+    $('#novo-cadastro').click(function() {
+        window.document.location = "novo_cadastro.html";
+    });
+</script>
+<!-- ESSE CADASTRO SERÁ INTEGRADO COM UM DB MYSQL - ROTINA SAP -->

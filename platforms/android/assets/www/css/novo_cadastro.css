@@ -1,0 +1,417 @@
+.div-opac {
+    opacity: 0.45;
+}
+
+@media (min-width: 20em) {
+    .img-voltar {
+        top: 0;
+        left: 0;    
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .div-body {
+        width: 20em;
+        height: 33.3em;
+        top: 0;
+        left: 0;    
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    
+    .div-header {
+        top: 0;
+        left: 0;
+        width: 20em;
+        height: 5em;
+        position: absolute;
+    }
+    
+    .logo {
+        width: 4em;
+        height: 3em;
+        position: absolute;
+        margin: 0 0 0 0.5em;
+    }
+
+    .text-header {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        top: 0;
+        vertical-align: top;
+        position: absolute;
+        margin: 0.5em 0 0 3em;
+    }
+    
+    .div-cadastro {
+        width: 15em;
+        height: 19em;
+        margin: 5em 0 0 2.5em;
+        position: absolute;
+    }
+
+    .div-icon-button {
+        width: 15.2em;
+        height: 2.4em;
+        margin: 26em 0 0 2.5em;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .input-user {
+        margin: 4.7em 0 0 4.3em;
+        height: 1em;
+        width: 9.5em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-email {
+        margin: 7.2em 0 0 4.3em;
+        height: 1em;
+        width: 9.5em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .text-data-nasc {
+        margin: 10em 0 0 2em;
+        height: 2em;
+        width: 12em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-dia-nasc {
+        margin: 11.7em 0 0 2.8em;
+        height: 1em;
+        width: 1.7em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-mes-nasc {
+        margin: 11.7em 0 0 6em;
+        height: 1em;
+        width: 1.7em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-ano-nasc {
+        margin: 11.6em 0 0 9.3em;
+        height: 1.3em;
+        width: 4.5em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-pass {
+        margin: 15.5em 0 0 2.8em;
+        height: 1em;
+        width: 11em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-confirm-pass {
+        margin: 17.8em 0 0 2.8em;
+        height: 1em;
+        width: 11em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+}
+@media (min-width: 25em) {
+    .div-body {
+        width: 20em;
+        height: 33.3em;
+        top: 0;
+        left: 0;    
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    
+    .div-header {
+        top: 0;
+        left: 0;
+        width: 20em;
+        height: 5em;
+        position: absolute;
+    }
+    
+    .logo {
+        width: 4em;
+        height: 3em;
+        position: absolute;
+        margin: 0 0 0 0.5em;
+    }
+
+    .text-header {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        top: 0;
+        vertical-align: top;
+        position: absolute;
+        margin: 0.5em 0 0 3em;
+    }
+    
+    .div-cadastro {
+        width: 15em;
+        height: 19em;
+        margin: 5em 0 0 2.5em;
+        position: absolute;
+    }
+
+    .div-icon-button {
+        width: 15.2em;
+        height: 2.4em;
+        margin: 26em 0 0 2.5em;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .input-user {
+        margin: 4.7em 0 0 4.3em;
+        height: 1em;
+        width: 10em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-email {
+        margin: 7.2em 0 0 4.3em;
+        height: 1em;
+        width: 10em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .text-data-nasc {
+        margin: 10em 0 0 2em;
+        height: 2em;
+        width: 12em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-dia-nasc {
+        margin: 11.7em 0 0 2.8em;
+        height: 1em;
+        width: 1.7em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-mes-nasc {
+        margin: 11.7em 0 0 6em;
+        height: 1em;
+        width: 1.7em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-ano-nasc {
+        margin: 11.6em 0 0 9.3em;
+        height: 1.3em;
+        width: 4.5em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-pass {
+        margin: 15.5em 0 0 2.8em;
+        height: 1em;
+        width: 11em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-confirm-pass {
+        margin: 17.8em 0 0 2.8em;
+        height: 1em;
+        width: 11em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+}
+@media (min-width: 37em) { /* 592px */
+    .div-body {
+        width: 20em;
+        height: 33.3em;
+        top: 0;
+        left: 0;    
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    
+    .div-header {
+        top: 0;
+        left: 0;
+        width: 20em;
+        height: 5em;
+        position: absolute;
+    }
+    
+    .logo {
+        width: 4em;
+        height: 3em;
+        position: absolute;
+        margin: 0 0 0 0.5em;
+    }
+
+    .text-header {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        top: 0;
+        vertical-align: top;
+        position: absolute;
+        margin: 0.5em 0 0 3em;
+    }
+    
+    .div-cadastro {
+        width: 15em;
+        height: 19em;
+        margin: 5em 0 0 2.5em;
+        position: absolute;
+    }
+
+    .div-icon-button {
+        width: 15.2em;
+        height: 2.4em;
+        margin: 26em 0 0 2.5em;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .input-user {
+        margin: 4.7em 0 0 4.3em;
+        height: 1em;
+        width: 9.5em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-email {
+        margin: 7.2em 0 0 4.3em;
+        height: 1em;
+        width: 9.5em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .text-data-nasc {
+        margin: 10em 0 0 2em;
+        height: 2em;
+        width: 12em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-dia-nasc {
+        margin: 11.7em 0 0 2.8em;
+        height: 1em;
+        width: 1.7em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-mes-nasc {
+        margin: 11.7em 0 0 6em;
+        height: 1em;
+        width: 1.7em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-ano-nasc {
+        margin: 11.6em 0 0 9.3em;
+        height: 1.3em;
+        width: 4.5em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-pass {
+        margin: 15.5em 0 0 2.8em;
+        height: 1em;
+        width: 11em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-confirm-pass {
+        margin: 17.8em 0 0 2.8em;
+        height: 1em;
+        width: 11em;
+        position: absolute;
+        font-size: 20px;
+        outline: none;
+        border: 0;
+    }
+}
+@media (min-width: 41em) { /* 656px */
+    
+}
+@media (min-width: 47em) { /* 752px */
+    
+}
+@media (min-width: 68em) { /* 1088px */
+    
+}
+@media (min-width: 82em) { /* 1312px */
+
+}
+@media (min-width: 100em) { /* 1600px */
+    
+}

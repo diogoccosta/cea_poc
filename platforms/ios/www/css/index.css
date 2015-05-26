@@ -1,0 +1,107 @@
+.div-opac {
+    opacity: 0.15;
+}
+
+@media (min-width: 20em) {
+    .div-body {
+        width: 20em;
+        height: 33.3em;
+        top: 0;
+        left: 0;    
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    
+    .div-center {
+        width: 7em;
+        height: 10em;
+        margin: 0.5em 0 0 6.2em;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    
+    .div-login {
+        width: 13.3em;
+        height: 10em;
+        margin: 8.7em 0 0 3em;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+
+    .div-icon-button {
+        width: 13.3em;
+        height: 2.4em;
+        margin: 19.5em 0 0 3em;
+        position: absolute;
+        cursor: pointer;
+        background-repeat: no-repeat;
+    }
+
+    .div-facebook {
+        width: 2.3em;
+        height: 2.3em;
+        margin: 22.5em 0 0 8.7em;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+
+    .div-new-user {
+        width: 2.3em;
+        height: 2.3em;
+        margin: 26em 0 0 8.7em;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+
+    .text-facebook {
+        margin: 24.7em 0 0 5.7em;
+        position: absolute;
+    }
+
+    .text-new-user {
+        margin: 28.5em 0 0 6.8em;
+        position: absolute;
+        text-align: center;
+    }
+
+    .input-user {
+        margin: 7.2em 0 0 4em;
+        height: 1em;
+        width: 6em;
+        position: absolute;
+        font-size: 25px;
+        outline: none;
+        border: 0;
+    }
+
+    .input-pass {
+        margin: 9.5em 0 0 4em;
+        height: 1em;
+        width: 6em;
+        position: absolute;
+        font-size: 25px;
+        outline: none;
+        border: 0;
+    }
+}
+@media (min-width: 25em) {
+    
+}
+@media (min-width: 37em) { /* 592px */
+    
+}
+@media (min-width: 41em) { /* 656px */
+    
+}
+@media (min-width: 47em) { /* 752px */
+    
+}
+@media (min-width: 68em) { /* 1088px */
+    
+}
+@media (min-width: 82em) { /* 1312px */
+
+}
+@media (min-width: 100em) { /* 1600px */
+    
+}

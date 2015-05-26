@@ -1,0 +1,102 @@
+.div-opac-menu {
+    opacity: 0.45;
+}
+
+@media (min-width: 20em) {
+    .div-body-menu {
+        width: 20em;
+        height: 33.3em;
+        top: 0;
+        left: 0;    
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    
+    .div-header-menu {
+        top: 0;
+        left: 0;
+        width: 20em;
+        height: 5em;
+        position: absolute;
+    }
+    
+    .menu {
+        width: 2em;
+        height: 1.5em;
+        position: absolute;
+        margin: 0.5em 0 0 0.5em;
+    }
+    
+    .logo-menu {
+        width: 4em;
+        height: 3em;
+        position: absolute;
+        margin: -4.2em 0 0 15em;
+    }
+
+    .text-header-menu {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        vertical-align: top;
+        position: relative;
+        margin: 0.6em 0 0 0em;
+    }
+    
+    .img-menu {
+        width: 17em;
+        height: 33.3em;
+        top: 0;
+        left: 0.1em;
+        position: absolute;
+    }
+    
+    .div-pagina-menu {
+        width: 40em;
+    }
+    
+    .botao-link {
+        width: 10em;
+        height: 2em;
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+    }
+    
+    .botao-camera {
+        margin: 7.3em 0 0 0.5em;
+    }
+    
+    .botao-email {
+        margin: 9.3em 0 0 0.5em;
+    }
+    
+    .botao-mapa {
+        margin: 11.1em 0 0 0.5em;
+    }
+    
+    .botao-bluetooth {
+        margin: 13em 0 0 0.5em;
+    }
+}
+@media (min-width: 25em) {
+    
+}
+@media (min-width: 37em) { /* 592px */
+    
+}
+@media (min-width: 41em) { /* 656px */
+    
+}
+@media (min-width: 47em) { /* 752px */
+    
+}
+@media (min-width: 68em) { /* 1088px */
+    
+}
+@media (min-width: 82em) { /* 1312px */
+
+}
+@media (min-width: 100em) { /* 1600px */
+    
+}

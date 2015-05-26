@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>C&amp;A</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" 
+              href="css/novo_cadastro.css">
+        <script type="text/javascript" 
+            src="jquery/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/novo_cadastro.js"></script>
+        <script type="text/javascript">
+document.addEventListener("deviceready", SMPIntegration.init, false);
+//document.addEventListener("online", SMPIntegration.deviceOnline, false);
+//document.addEventListener("offline", SMPIntegration.deviceOffline, false);
+document.addEventListener("pause", SMPIntegration.onPause, false);
+document.addEventListener("resume", SMPIntegration.onResume, false);
+
+</script>
+
+    </head>
+    <body>
+        <div>
+<!--            <img src="img/Header/voltar.jpg" 
+                 class="img-voltar" alt="" />-->
+            <img src="img/Screen_3/screen_3_background.png" 
+                 class="div-body div-opac" alt="" />
+            <img src="img/Header/header.png"
+                 class="div-header" alt="" />
+            <img src="img/Header/logo-.png" 
+                 class="logo" alt="" />
+            <p class="text-header">CADASTRO</p>
+            
+            
+            <img src="img/Screen_3/text_fields.png" 
+                 class="div-cadastro" alt=""/>
+            <img src="img/Screen_3/cada_button-.png"
+                 class="div-icon-button" alt=""/>
+            <form action="">
+            <div class="input-user">
+                <input id="user" type="text" name="user" class="input-user" 
+                       placeholder="Usuário" maxlength="50"/>
+            </div>
+            <div class="input-email">
+                <input id="email" type="text" name="email" class="input-email" 
+                       placeholder="Email" maxlength="50"/>
+            </div>
+            <div>
+                <p class="text-data-nasc">Data de nascimento</p>
+                <input id="dia-nasc" type="text" name="dia-nasc" class="input-dia-nasc" 
+                       placeholder="dd" maxlength="2"/>
+                <input id="mes-nasc" type="text" name="mes-nasc" class="input-mes-nasc" 
+                       placeholder="mm" maxlength="2"/>
+                <input id="ano-nasc" type="text" name="ano-nasc" class="input-ano-nasc" 
+                       placeholder="year" maxlength="4"/>
+            </div>
+            <div class="input-pass">
+                <input id="pass" type="text" name="pass" class="input-pass" 
+                       placeholder="Senha" maxlength="50"/>
+            </div>
+            <div class="input-confirm-pass">
+                <input id="confirm-pass" type="text" name="confirm-pass" class="input-confirm-pass" 
+                       placeholder="Confirmar Senha" maxlength="50"/>
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
+<script type="text/javascript">
+    $('.img-voltar').click(function() {
+        
+    });
+</script>

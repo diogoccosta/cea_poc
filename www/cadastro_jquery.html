@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link type="text/css" rel="stylesheet" 
+              href="jquery/jquery-mobile/jquery.mobile.css">
+        <link type="text/css" rel="stylesheet" 
+              href="jquery/jquery-mobile/jquery.mobile.structure.css">
+        <link type="text/css" rel="stylesheet" 
+              href="jquery/jquery-mobile/jquery.mobile.theme.css">
+        <script type="text/javascript" 
+            src="jquery/jquery/jquery.js"></script>
+        <script type="text/javascript" 
+            src="jquery/jquery-mobile/jquery.mobile.js"></script>
+    </head>
+    <body>
+        <div><input type="text" id="datec" name="datec" value="callDate" /></div>
+    </body>
+</html>
+<script type="text/javascript">
+
+    $('#datec').click(function() {
+        function callDate() {
+            var options = {
+                date: new Date(),
+                mode: 'date'
+            };
+            datePicker.show(options, function(date){
+                alert("date result " + date);  
+            });
+        }
+    });
+        
+</script>

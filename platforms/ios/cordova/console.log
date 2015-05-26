@@ -1,0 +1,40 @@
+2015-05-26 13:18:44.232 CeAPOC[32545:2673063] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/i810937/Library/Developer/CoreSimulator/Devices/57BAF446-8A40-47FE-807F-14E6B8A8631F/data/Containers/Data/Application/0AA5B685-0A97-4015-B16E-C3B171588466/Library/Cookies/Cookies.binarycookies
+2015-05-26 13:18:44.568 CeAPOC[32545:2673063] Apache Cordova native platform version 3.7.0 is starting.
+2015-05-26 13:18:44.568 CeAPOC[32545:2673063] Multi-tasking -> Device: YES, App: YES
+2015-05-26 13:18:44.583 CeAPOC[32545:2673063] Unlimited access to network resources
+2015-05-26 13:18:44.592 CeAPOC[32545:2673063] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-05-26 13:18:44.985 CeAPOC[32545:2673063] [group: com.sap.smp.client.ios] [artifact: Supportability] [version: 3.7.0] [buildTime: 2015-02-23 23:18] [gitCommit: 755588bcde4c75c0b35f7d584bb4c16d2d00d8cf] [gitBranch: origin/fa/rel-3.7]
+2015-05-26 13:18:44.985 CeAPOC[32545:2673063] [group: com.sap.smp.client.ios] [artifact: ClientLog] [version: 3.7.0] [buildTime: 2015-02-23 23:18] [gitCommit: 755588bcde4c75c0b35f7d584bb4c16d2d00d8cf] [gitBranch: origin/fa/rel-3.7]
+2015-05-26 13:18:45.026 CeAPOC[32545:2673063] [group: com.sap.smp.client.ios] [artifact: E2ETrace2] [version: 3.7.0] [buildTime: 2015-02-23 23:18] [gitCommit: 755588bcde4c75c0b35f7d584bb4c16d2d00d8cf] [gitBranch: origin/fa/rel-3.7]
+2015-05-26 13:18:45.028 CeAPOC[32545:2673063] CommonAuthenticationConfigurator isNSHTTPURLProtocolReplacementEnabled: 0
+2015-05-26 13:18:45.028 CeAPOC[32545:2673063] [CDVTimer][authproxy] 44.746041ms
+2015-05-26 13:18:45.028 CeAPOC[32545:2673063] [CDVTimer][TotalPluginStartup] 44.889033ms
+2015-05-26 13:18:45.201 CeAPOC[32545:2673063] Resetting plugins due to page load.
+2015-05-26 13:18:45.539 CeAPOC[32545:2673063] Finished load of: file:///Users/i810937/Library/Developer/CoreSimulator/Devices/57BAF446-8A40-47FE-807F-14E6B8A8631F/data/Containers/Bundle/Application/175E1BA1-E28E-4304-9C37-4372E70FCD38/CeAPOC.app/www/index.html
+2015-05-26 13:20:35.441 CeAPOC[35229:2678591] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/i810937/Library/Developer/CoreSimulator/Devices/57BAF446-8A40-47FE-807F-14E6B8A8631F/data/Containers/Data/Application/06756A0F-1A17-442F-AA9A-FFF286A4CCD0/Library/Cookies/Cookies.binarycookies
+2015-05-26 13:20:35.510 CeAPOC[35229:2678591] Apache Cordova native platform version 3.7.0 is starting.
+2015-05-26 13:20:35.510 CeAPOC[35229:2678591] Multi-tasking -> Device: YES, App: YES
+2015-05-26 13:20:35.512 CeAPOC[35229:2678591] Unlimited access to network resources
+2015-05-26 13:20:35.515 CeAPOC[35229:2678591] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-05-26 13:20:35.632 CeAPOC[35229:2678591] [group: com.sap.smp.client.ios] [artifact: Supportability] [version: 3.7.0] [buildTime: 2015-02-23 23:18] [gitCommit: 755588bcde4c75c0b35f7d584bb4c16d2d00d8cf] [gitBranch: origin/fa/rel-3.7]
+2015-05-26 13:20:35.632 CeAPOC[35229:2678591] [group: com.sap.smp.client.ios] [artifact: ClientLog] [version: 3.7.0] [buildTime: 2015-02-23 23:18] [gitCommit: 755588bcde4c75c0b35f7d584bb4c16d2d00d8cf] [gitBranch: origin/fa/rel-3.7]
+2015-05-26 13:20:35.645 CeAPOC[35229:2678591] [group: com.sap.smp.client.ios] [artifact: E2ETrace2] [version: 3.7.0] [buildTime: 2015-02-23 23:18] [gitCommit: 755588bcde4c75c0b35f7d584bb4c16d2d00d8cf] [gitBranch: origin/fa/rel-3.7]
+2015-05-26 13:20:35.646 CeAPOC[35229:2678591] CommonAuthenticationConfigurator isNSHTTPURLProtocolReplacementEnabled: 0
+2015-05-26 13:20:35.646 CeAPOC[35229:2678591] [CDVTimer][authproxy] 14.078021ms
+2015-05-26 13:20:35.646 CeAPOC[35229:2678591] [CDVTimer][TotalPluginStartup] 14.292002ms
+2015-05-26 13:20:35.695 CeAPOC[35229:2678591] Resetting plugins due to page load.
+2015-05-26 13:20:35.863 CeAPOC[35229:2678591] Finished load of: file:///Users/i810937/Library/Developer/CoreSimulator/Devices/57BAF446-8A40-47FE-807F-14E6B8A8631F/data/Containers/Bundle/Application/D221D02C-B312-47C5-9626-E8F06BEAFEE3/CeAPOC.app/www/index.html
